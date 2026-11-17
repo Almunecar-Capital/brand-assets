@@ -1,0 +1,10 @@
+% Logo Almuñécar Capital (TikZ). Requiere xcolor 'corp' y fuente con \aclogofont.
+\providecommand{\aclogofont}{\fontspec{Source Sans Pro Semibold}[LetterSpace=18]}
+\providecommand{\acsymfont}{\fontspec{Source Sans Pro Light}}
+% símbolo: horizonte + ola mediterránea + sol
+\newcommand{\acsymbol}[1][1]{\begin{tikzpicture}[scale=#1,line cap=round,line join=round,baseline=0.15]
+ \draw[corp,line width=#1*1.1pt] (0,0.62) arc[start angle=180,end angle=0,radius=0.22];
+ \draw[corp,line width=#1*0.9pt] (-0.25,0.62) -- (0.69,0.62);
+ \draw[corp,line width=#1*1.1pt] (-0.25,0.36) .. controls (-0.05,0.50) and (0.05,0.22) .. (0.22,0.36) .. controls (0.39,0.50) and (0.49,0.22) .. (0.69,0.36);
+ \draw[corp!55,line width=#1*1.1pt] (-0.25,0.12) .. controls (-0.05,0.26) and (0.05,-0.02) .. (0.22,0.12) .. controls (0.39,0.26) and (0.49,-0.02) .. (0.69,0.12);
+\end{tikzpicture}}

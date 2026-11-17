@@ -1,0 +1,10 @@
+\documentclass[border=4pt]{standalone}
+\usepackage{fontspec,tikz,xcolor}
+\definecolor{corp}{HTML}{1F3A5F}
+\input{aclogo.tex}
+\begin{document}
+\begin{tikzpicture}
+\node[anchor=west] (s) at (0,0) {\acsymbol[2.2]};
+\node[anchor=west,text=corp] at ([xshift=3pt]s.east) {\fontsize{17}{17}\selectfont\aclogofont ALMUÑÉCAR\ \ CAPITAL};
+\end{tikzpicture}
+\end{document}
